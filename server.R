@@ -87,7 +87,7 @@ shinyServer(function(input, output, session) {
 ###########################################################################################################################################################################
 
   output$semester_select_mul <- renderUI({
-    selectInput("sem_select_mul", "* Required Field", 1:8)
+    selectInput("sem_select_mul", "* Required Field", 1:7)
   })
   
   output$exam_select_mul <- renderUI({
@@ -170,7 +170,7 @@ shinyServer(function(input, output, session) {
 ##########################################################################################################################################################################
 
   output$semester_select_sol_sin_down <- renderUI({
-    selectInput("sem_select_solution", "* Required Field", 1:8)
+    selectInput("sem_select_solution", "* Required Field", 1:7)
   })
   output$subject_select_sol_sin_down <- renderUI({
     req(input$sem_select_solution)

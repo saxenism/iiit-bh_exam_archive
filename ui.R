@@ -91,7 +91,7 @@ shinyUI(
           fluidRow(box(br(),h4(tags$b("Upload your solution here")), br(),br(),br(), uiOutput("upload_solution_button"), height = 250))
         ),
         tabItem(tabName = "down_qp_sin", 
-                fluidRow(box(br(),h4(tags$b("Select examination type")), br(),br(),br(), uiOutput("semester_select_sol_sin_down"), width = 6, height = 250, background = "blue"),
+                fluidRow(box(br(),h4(tags$b("Select Semester")), br(),br(),br(), uiOutput("semester_select_sol_sin_down"), width = 6, height = 250, background = "blue"),
                          box(br(),h4(tags$b("Select subject")), br(),br(),br(), uiOutput("subject_select_sol_sin_down"), width = 6, height = 250, background = "blue")),
                 
                 fluidRow(box(br(),h4(tags$b("Select one of the available papers for download")), br(), br(), br(), uiOutput("available_paper"), width = 6, height = 250, background = "light-blue")),
