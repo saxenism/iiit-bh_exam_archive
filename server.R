@@ -178,7 +178,7 @@ shinyServer(function(input, output, session) {
   })
   output$available_paper <- renderUI({
     req(input$sem_select_solution, input$sub_select_sol_sin_down)
-    selectInput("avail_paper", "* Choose only one", choices = list.files(path = sprintf("www/%s", input$sem_select_solution), pattern = sprintf("%s", input$sub_select_sol_sin_down)))
+    selectInput("avail_paper", "* Choose only one", choices = list.files(path = sprintf("www/%s", input$sem_select_solution), pattern = sprintf("^%s", input$sub_select_sol_sin_down)))
   })
   
   output$download_single_qp_button <- renderUI({
